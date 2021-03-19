@@ -74,14 +74,13 @@ p {
   color: white;
   background-color: #C6927D;
   left: calc(50% - 414px);
-  top: calc(50% - -110px);
+  top: calc(50% - -70px);
   z-index: 150;
   outline: none;
   width: 8em;
   text-align: center;
   height: 1.5em;
 }
-
 
 /*Spelinformatie*/
 h1 {
@@ -123,21 +122,24 @@ h3 {
   font-size: 15px;
   color: black;
   background-color: white;
-  border: 2px solid pink;
+  border: 2px solid #C6927D;
   outline: none;
-  width: 10em;
+  border-radius: 50em;
+  height: 2em;
+  width: 13em;
 }
 
 /* Guess button */
 #naamBtn {
   font-family: helvetica;
   font-size: 15px;
-  color: black;
-  background-color: white;
-  border: 2px solid pink;
+  color: white;
+  background-color: #C6927D;
+  border: 2px solid #C6927D;
   border-radius: 50em;
   outline: none;
   width: 6em;
+  height: 2em;
   cursor: pointer;
 }
 
@@ -145,12 +147,13 @@ h3 {
 #opnieuwBtn {
   font-family: helvetica;
   font-size: 15px;
-  color: black;
+  color: #C6927D;
   background-color: white;
-  border: 2px solid pink;
+  border: 2px solid #C6927D;
   border-radius: 50em;
   outline: none;
   width: 6em;
+  height: 2em;
   cursor: pointer;
 }
 
@@ -161,7 +164,6 @@ h3 {
   top: calc(50% - 333px);
   z-index: 500;
 }
-
 
 /* Achtergrond */
 .vierkant,
@@ -608,28 +610,6 @@ body.white .armrechts {
   border: 2px solid black;
 }
 
-/* Grow hair button */
-.growHair {
-  position: absolute;
-  font-family: helvetica;
-  font-size: 15px;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 50em;
-  left: calc(50% - 400px);
-  top: calc(50% - 0px);
-  z-index: 150;
-  outline: none;
-  width: 6em;
-}
-
-.growHair:hover,
-.growHair:focus {
-  background-color: white;
-  border: 2px solid black;
-}
-
 /* Dye hair button blonde */
 .dyeHair {
   position: absolute;
@@ -640,7 +620,7 @@ body.white .armrechts {
   border: 2px solid black;
   border-radius: 50em;
   left: calc(50% - 400px);
-  top: calc(50% - -40px);
+  top: calc(50% - 0px);
   z-index: 150;
   outline: none;
   width: 6em;
@@ -662,7 +642,7 @@ body.white .armrechts {
   border: 2px solid black;
   border-radius: 50em;
   left: calc(50% - 400px);
-  top: calc(50% - -80px);
+  top: calc(50% - -40px);
   z-index: 150;
   outline: none;
   width: 6em;
@@ -684,7 +664,7 @@ body.white .armrechts {
   border: 2px solid black;
   border-radius: 50em;
   left: calc(50% - 400px);
-  top: calc(50% - -160px);
+  top: calc(50% - -120px);
   z-index: 150;
   outline: none;
   width: 6em;
@@ -706,7 +686,7 @@ body.white .armrechts {
   border: 2px solid black;
   border-radius: 50em;
   left: calc(50% - 400px);
-  top: calc(50% - -200px);
+  top: calc(50% - -160px);
   z-index: 150;
   outline: none;
   width: 6em;
@@ -728,7 +708,7 @@ body.white .armrechts {
   border: 2px solid black;
   border-radius: 50em;
   left: calc(50% - 400px);
-  top: calc(50% - -240px);
+  top: calc(50% - -200px);
   z-index: 150;
   outline: none;
   width: 6em;

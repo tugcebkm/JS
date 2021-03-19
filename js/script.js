@@ -1,10 +1,9 @@
 /* Parameter: spelinformatie */
 /* Bron: https://dlo.mijnhva.nl/d2l/le/content/192726/viewContent/708005/View */
-
 var spelNaam = document.querySelector("#spelNaam"); //QuerySelector zoekt in "dom". spelNaam is een selector die in de dom staat als id.
 
 function spelInfo(dollName, gameName) { //Maakt functie aan om spel informatie te tonen
-    spelNaam.textContent = dollName + " " + gameName + " " + 'click on the buttons to play'; //textContent plaatst de tekst in het opgehaalde variabele
+    spelNaam.textContent = dollName + " " + gameName + " " + 'click on the buttons to play'; //textContent plaatst de letterlijke tekst in het opgehaalde variabele
 }
 spelInfo("Anastasia", "makeup doll,"); //Functie laten uitvoeren (wordt weergegeven in html)
 
@@ -15,50 +14,50 @@ spelInfo("Anastasia", "makeup doll,"); //Functie laten uitvoeren (wordt weergege
 function auteurInfo(naam, vakNaam) { //Maakt functie aan om auteur informatie te tonen
     var infoAuteur = "This game is made by: " + naam + ", " + "for the subject: " + vakNaam;
 
-    var element = document.createElement('h3'); // Element aanmaken
-    element.innerHTML = infoAuteur; // Gelijk aan string
+    var informatie = document.createElement('h3'); // Nieuwe element aanmaken, in de console lijkt het op een html selector
+    informatie.innerHTML = infoAuteur; // Gelijk aan string en leest html waarden zoals <strong>
 
-    var auteurTekst = document.querySelector("#auteur"); //element toevoegen
-    auteurTekst.appendChild(element);
+    var auteurTekst = document.querySelector("#auteur");
+    auteurTekst.appendChild(informatie); // Aangemaakte element(informatie) wordt toegevoegd aan de html
 }
 auteurInfo('Tugce', 'Inleiding Programmeren'); //Functie laten uitvoeren (wordt weergegeven in html)
 
 
-/* https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_if_prompt */
-var naamBtn = document.querySelector("#naamBtn");
-naamBtn.addEventListener("click", drankNaam);
+/* Bron: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_state_if_prompt */
+var naamBtn = document.querySelector("#naamBtn"); //Variabele aanmaken
+naamBtn.addEventListener("click", drankNaam); //drankNaam vertelt wat er moet gebeuren als er geklikt wordt op de selector
 
 function drankNaam() { // Maak functie aan voor de input van de naam
     var naam = document.querySelector("#tekstVak").value;
     var bericht;
 
     // Controleert de input van de gebruiker
-    if (naam === "Rose") {
-        // als de input gelijk is aan het woord Tugce (identiek), geeft dit weer
+    if (naam === "rose") {
+        // als de input gelijk is aan het woord rose (identiek), geeft dit weer
         bericht = "Yaay! You guessed right";
 
-    } else if (naam === "Red" || naam === "White") { // Twee waarden woorden vergeleken
+    } else if (naam === "red" || naam === "white") { // Twee waarden woorden vergeleken
         bericht = "Close, but not close enough..."; // Wanneer de gebruiker het bijna goed heeft geraden, geeft dit weer
 
     } else {   // wanneer het fout is, geeft dit weer
         bericht = "Ooppss, try again";
     }
 
-    document.getElementById("outputTekst").innerHTML = bericht; //Functie laten uitvoeren (wordt weergegeven in html)
+    document.querySelector("#outputTekst").innerHTML = bericht; //Functie laten uitvoeren (wordt weergegeven in html)
 }
 
 // Functie voor de button "try again", gebruiker kan opnieuw proberen
-var opnieuwBtn = document.querySelector("#opnieuwBtn");
-opnieuwBtn.addEventListener("click", clearGuess);
+var opnieuwBtn = document.querySelector("#opnieuwBtn"); //Variabele aanmaken
+opnieuwBtn.addEventListener("click", clearGuess); //Het element gaat hier luisteren naar een event (dus de click)
 
-function clearGuess() {
-    document.getElementById("outputTekst").innerHTML = '';
-    document.getElementById("tekstVak").value = '';
+function clearGuess() { //Maakt functie aan om de click uit te voeren
+    document.querySelector("#outputTekst").innerHTML = '';
+    document.querySelector("#tekstVak").value = ''; //Functie laten uitvoeren (wordt weergegeven in html)
 }
 
 /* Bron: https://codepen.io/shooft/pen/zYGKBJv van Sanne Hooft */
 /* black sweater */
-var veranderKleurBtn = document.querySelector(".veranderKleur"); //QuerySelector zoekt in "dom". veranderKleur is een selector die in de dom staat als id.
+var veranderKleurBtn = document.querySelector(".veranderKleur"); //QuerySelector zoekt in "dom" aangegeven selector
 
 veranderKleurBtn.addEventListener("click", veranderKleding); //Het element gaat hier luisteren naar een event (dus de click)
 
@@ -88,21 +87,12 @@ function veranderKleding3() {
 }
 
 /* cut hair */
-var veranderHaarBtn = document.querySelector(".cutHair"); //QuerySelector zoekt in "dom". cutHair is een selector die in de dom staat als id.
+var veranderHaarBtn = document.querySelector(".cutHair"); //QuerySelector zoekt in "dom" aangegeven selector // variabele aanmaken
 
 veranderHaarBtn.addEventListener("click", veranderHaar); //Het element gaat hier luisteren naar een event (dus de click)
 
 function veranderHaar() { //Maakt functie aan om de click uit te voeren
     document.body.classList.toggle("cut"); //Class wordt toegevoegd en weer verwijderd
-}
-
-/* grow hair */
-var veranderHaarBtn1 = document.querySelector(".growHair");
-
-veranderHaarBtn1.addEventListener("click", veranderHaar1);
-
-function veranderHaar1() {
-    document.body.classList.toggle("grow");
 }
 
 /* Dye hair blonde */

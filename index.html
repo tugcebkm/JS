@@ -2,98 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
 </head>
 
 <body>
 
-    <!-- Spelinformatie -->
-    <h1>Game: <span id="spelNaam">...</span></h1>
+  <!-- Spelinformatie -->
+  <h1>Game: <span id="spelNaam">...</span></h1>
 
-   <!-- Auteur informatie -->
-    <div id="auteur"></div>
+  <!-- Auteur informatie -->
+  <div id="auteur"></div>
 
-    <!-- Welkomst bericht -->
-    <section class="guessContainer">
-        <h2>Hi, I'm Anastasia. Guess my favorite wine!</h2>
-        <input id="tekstVak" type="text">
-        <button id="naamBtn">Guess</button>
-        <button id="opnieuwBtn">Try again</button>
-        <h3 id="outputTekst"></h3> <!-- leeg omdat hier de output tekst wordt getoont via js -->
-    </section>
+  <!-- Welkomst bericht -->
+  <section class="guessContainer">
+    <h2>Hi, I'm Anastasia. Guess my favorite wine!</h2>
+    <input id="tekstVak" type="text">
+    <button id="naamBtn">Guess</button>
+    <button id="opnieuwBtn">Try again</button>
+    <h3 id="outputTekst"></h3> <!-- leeg omdat hier de output tekst wordt getoont via js -->
+  </section>
 
-    <!-- Achtergrond -->
-    <div class="vierkant">
-        <div class="cirkel">
-            <div class="cirkel2"></div>
+  <!-- Achtergrond -->
+  <div class="vierkant">
+    <div class="cirkel">
+      <div class="cirkel2"></div>
+    </div>
+
+
+    <!-- Hoofd -->
+    <div class="hoofd-cont">
+      <div class="haar"></div>
+      <div class="nek"></div>
+      <div class="pony"></div>
+      <div class="gezicht">
+        <div class="oor"></div>
+        <div class="onderlip"></div>
+        <div class="bovenlip"></div>
+      </div>
+    </div>
+
+
+    <!-- Lichaam -->
+    <div class="lichaam"></div>
+    <div class="kleding"></div>
+    <div class="swoosh"></div>
+    <div class="swoosh1"></div>
+    <div class="hand">
+      <div class="armlinks"></div>
+    </div>
+    <div class="armrechts"></div>
+
+
+
+    <!-- Glas -->
+    <div class="glas-cont">
+      <div class="glas">
+        <div class="wijn">
         </div>
 
+      </div>
 
-        <!-- Hoofd -->
-        <div class="hoofd-cont">
-            <div class="haar"></div>
-            <div class="nek"></div>
-            <div class="pony"></div>
-            <div class="gezicht">
-                <div class="oor"></div>
-                <div class="onderlip"></div>
-                <div class="bovenlip"></div>
-            </div>
-        </div>
-
-
-        <!-- Lichaam -->
-        <div class="lichaam"></div>
-        <div class="kleding"></div>
-        <div class="swoosh"></div>
-        <div class="swoosh1"></div>
-        <div class="hand">
-            <div class="armlinks"></div>
-        </div>
-        <div class="armrechts"></div>
-
-
-
-        <!-- Glas -->
-        <div class="glas-cont">
-            <div class="glas">
-                <div class="wijn">
-                </div>
-
-            </div>
-
-            <div class="tussenstuk"></div>
-            <div class="onderkant"></div>
-
-        </div>
-
-        <!-- Buttons -->
+      <div class="tussenstuk"></div>
+      <div class="onderkant"></div>
 
     </div>
-    <p>Change sweater:</p>
-    <button class="veranderKleur">sweater</button>
-    <button class="veranderKleur2">sweater</button>
-    <button class="veranderKleur3">sweater</button>
+
+    <!-- Buttons -->
+
+  </div>
+  <p>Change sweater:</p>
+  <button class="veranderKleur">sweater</button>
+  <button class="veranderKleur2">sweater</button>
+  <button class="veranderKleur3">sweater</button>
 
 
-    <p id="p1">Change hairstyle:</p>
-    <button class="cutHair">Cut hair</button>
-    <button class="growHair">Grow hair</button>
-    <button class="dyeHair">Dyehair</button>
-    <button class="dyeHair2">Dyehair</button>
+  <p id="p1">Change hairstyle:</p>
+  <button class="cutHair">Cut hair</button>
+  <button class="dyeHair">Dyehair</button>
+  <button class="dyeHair2">Dyehair</button>
 
-    <p id="p2">Change wine:</p>
-    <button class="redWine">Red wine</button>
-    <button class="whiteWine">White wine</button>
-    <button class="roseWine">Rose wine</button>
+  <p id="p2">Change wine:</p>
+  <button class="redWine">Red wine</button>
+  <button class="whiteWine">White wine</button>
+  <button class="roseWine">Rose wine</button>
 
-    <!-- <p class="footer">&copy; 2021 &dash; Tugce Bakim </p> -->
-
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

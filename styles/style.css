@@ -32,8 +32,12 @@
   }
 }
 
+body {
+  background-color: #E5CCBA;
+}
+
 /* Teksten */
-p, p1, p2 {
+p {
   position: absolute;
   font-family: helvetica;
   font-size: 1em;
@@ -48,16 +52,121 @@ p, p1, p2 {
   height: 1.5em;
 }
 
-p1 {
-  top: calc(50% - 75px);
+#p1 {
+  position: absolute;
+  font-family: helvetica;
+  font-size: 1em;
+  color: white;
+  background-color: #C6927D;
+  left: calc(50% - 414px);
+  top: calc(50% - 95px);
+  z-index: 150;
+  outline: none;
+  width: 8em;
+  text-align: center;
+  height: 1.5em;
 }
 
-p2 {
-  top: calc(50% - -130px);
+#p2 {
+  position: absolute;
+  font-family: helvetica;
+  font-size: 1em;
+  color: white;
+  background-color: #C6927D;
+  left: calc(50% - 414px);
+  top: calc(50% - -110px);
+  z-index: 150;
+  outline: none;
+  width: 8em;
+  text-align: center;
+  height: 1.5em;
 }
+
+
+/*Spelinformatie*/
+h1 {
+  position: absolute;
+  font-family: helvetica;
+  font-size: 1em;
+  color: #C6927D;
+  left: calc(50% - 215px);
+  top: calc(50% - -250px);
+}
+
+/*Auteur informatie*/
+div#auteur {
+  position: absolute;
+  font-family: roboto;
+  font-size: .8em;
+  left: calc(50% - 230px);
+  top: calc(50% - -350px);
+}
+
+/*Welkomst bericht*/
+section.guessContainer {
+  text-align: center;
+}
+
+h2 {
+  font-family: helvetica;
+  font-size: 1.4em;
+}
+
+h3 {
+  margin-top: 0.5em;
+}
+
+#tekstVak {
+  text-align: center;
+  top: 4em;
+  font-family: helvetica;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  border: 2px solid pink;
+  outline: none;
+  width: 10em;
+}
+
+/* Guess button */
+#naamBtn {
+  font-family: helvetica;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  border: 2px solid pink;
+  border-radius: 50em;
+  outline: none;
+  width: 6em;
+  cursor: pointer;
+}
+
+/* Try again button*/
+#opnieuwBtn {
+  font-family: helvetica;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  border: 2px solid pink;
+  border-radius: 50em;
+  outline: none;
+  width: 6em;
+  cursor: pointer;
+}
+
+#welkomstBericht {
+  font-size: 2em;
+  background-color: pink;
+  left: calc(50% - 250px);
+  top: calc(50% - 333px);
+  z-index: 500;
+}
+
 
 /* Achtergrond */
-.vierkant, .cirkel, .cirkel2 {
+.vierkant,
+.cirkel,
+.cirkel2 {
   position: absolute;
 }
 
@@ -204,7 +313,8 @@ body.wijnRose .wijn {
 }
 
 /* de lippen */
-.bovenlip, .onderlip {
+.bovenlip,
+.onderlip {
   position: absolute;
   background-color: #D96558;
 }
@@ -226,7 +336,8 @@ body.wijnRose .wijn {
 }
 
 /* Het haar */
-.haar, .pony {
+.haar,
+.pony {
   position: absolute;
   background: #B1866B;
 }
@@ -364,7 +475,8 @@ body.white .swoosh1 {
   animation-direction: alternate;
 }
 
-.armlinks, .armrechts {
+.armlinks,
+.armrechts {
   position: absolute;
   width: 70px;
   height: 200px;
@@ -424,7 +536,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.veranderKleur:hover, .veranderKleur:focus {
+.veranderKleur:hover,
+.veranderKleur:focus {
   background-color: black;
   border: 2px solid black;
 }
@@ -445,7 +558,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.veranderKleur2:hover, .veranderKleur2:focus {
+.veranderKleur2:hover,
+.veranderKleur2:focus {
   background-color: #627E6F;
   border: 2px solid black;
 }
@@ -466,7 +580,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.veranderKleur3:hover, .veranderKleur3:focus {
+.veranderKleur3:hover,
+.veranderKleur3:focus {
   background-color: white;
   border: 2px solid black;
 }
@@ -487,7 +602,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.cutHair:hover, .cutHair:focus {
+.cutHair:hover,
+.cutHair:focus {
   background-color: white;
   border: 2px solid black;
 }
@@ -508,7 +624,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.growHair:hover, .growHair:focus {
+.growHair:hover,
+.growHair:focus {
   background-color: white;
   border: 2px solid black;
 }
@@ -529,7 +646,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.dyeHair:hover, .dyeHair:focus {
+.dyeHair:hover,
+.dyeHair:focus {
   background-color: #DBAB78;
   border: 2px solid black;
 }
@@ -550,7 +668,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.dyeHair2:hover, .dyeHair2:focus {
+.dyeHair2:hover,
+.dyeHair2:focus {
   background-color: black;
   border: 2px solid black;
 }
@@ -571,7 +690,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.redWine:hover, .redWine:focus {
+.redWine:hover,
+.redWine:focus {
   background-color: #992E2E;
   border: 2px solid black;
 }
@@ -592,7 +712,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.whiteWine:hover, .whiteWine:focus {
+.whiteWine:hover,
+.whiteWine:focus {
   background-color: #fcf5db;
   border: 2px solid black;
 }
@@ -613,7 +734,8 @@ body.white .armrechts {
   width: 6em;
 }
 
-.roseWine:hover, .roseWine:focus {
+.roseWine:hover,
+.roseWine:focus {
   background-color: #E69C77;
   border: 2px solid black;
 }
